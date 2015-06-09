@@ -1,3 +1,4 @@
+
 describe "Artist" do
 
   it "can be initialized" do
