@@ -11,6 +11,7 @@ describe "Genre" do
   end
 
   it "has many songs" do
+    Song.reset_songs
     genre = Genre.new.tap { |g| g.name = 'rap' }
     3.times do
       song = Song.new
@@ -34,6 +35,7 @@ describe "Genre" do
 
   it "keeps unique artists" do
     genre = Genre.new.tap{|g| g.name = 'rap'}
+    Artist.reset_artists
     artist = Artist.new
 
     [1,2].each do

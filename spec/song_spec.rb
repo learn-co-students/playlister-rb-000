@@ -1,17 +1,17 @@
 describe "Song" do
-  xit "can initialize a song" do
+  it "can initialize a song" do
      # implement this spec
   end
 
-  xit "can have a name" do
+  it "can have a name" do
      # implement this spec
   end
 
-  xit "can have a genre" do
+  it "can have a genre" do
      # implement this spec
   end
 
-  xit "has an artist" do
+  it "has an artist" do
      # implement this spec
   end
 end
