@@ -1,17 +1,24 @@
 describe "Song" do
-  xit "can initialize a song" do
-     # implement this spec
+
+  it "can initialize a song" do
+    expect(Song.new).to be_an_instance_of(Song)
   end
 
-  xit "can have a name" do
-     # implement this spec
+  it "can have a name" do
+    song = Song.new
+    song.name = "Stop, or I'll Break your Heart!"
+    expect(song.name).to eq("Stop, or I'll Break your Heart!")
   end
 
-  xit "can have a genre" do
-     # implement this spec
+  it "can have a genre" do
+    song = Song.new
+    song.genre = Genre.new
+    expect(song.genre.count).to eq(1)
   end
 
-  xit "has an artist" do
-     # implement this spec
+  it "has an artist" do
+    song = Song.new
+    song.artist = Artist.new
+    expect(song.artist.count).to eq(1)
   end
 end
